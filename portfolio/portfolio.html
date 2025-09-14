@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magd Sheref Mohamed Ayyad - Full-Stack & AI Specialist</title>
+    <!-- Use a modern, professional font like Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #4c51bf, #5a32a3, #d946ef);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(#00000033 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="py-6 px-4 md:px-6 fixed top-0 w-full z-50 bg-gray-100 bg-opacity-90 backdrop-filter backdrop-blur-sm shadow-sm">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <a href="#" class="text-2xl font-bold gradient-text">Magd Ayyad</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors">About</a>
+                <a href="#ai-experiments" class="text-gray-700 hover:text-purple-600 transition-colors">AI Experiments</a>
+                <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-gray-100 bg-opacity-95 backdrop-filter backdrop-blur-sm shadow-lg py-4 transition-all duration-300 ease-in-out">
+            <div class="flex flex-col items-center space-y-4 text-lg">
+                <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors">About</a>
+                <a href="#ai-experiments" class="text-gray-700 hover:text-purple-600 transition-colors">AI Experiments</a>
+                <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 px-4 md:px-6 text-center relative overflow-hidden hero-pattern">
+            <div class="max-w-4xl mx-auto relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight gradient-text">
+                    Full-Stack Developer & AI Specialist
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Building intelligent web applications that solve real-world problems and create engaging user experiences.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#ai-experiments" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-700 transition-colors transform hover:scale-105">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="px-6 py-3 border border-purple-600 text-purple-600 font-semibold rounded-full hover:bg-purple-600 hover:text-white transition-colors transform hover:scale-105">
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 px-4 md:px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
+                    <div class="md:w-1/3 w-full flex justify-center md:justify-start">
+                        <!-- Profile Picture -->
+                        <img src="./profileimg.jpg" alt="Magd Ayyad smiling, facing forward, wearing a casual shirt. The background is softly blurred, suggesting an indoor setting. The overall tone is friendly and approachable." class="rounded-full border-4 border-purple-500 shadow-xl w-48 h-48 md:w-64 md:h-64 object-cover">
+                    </div>
+                    <div class="md:w-2/3 w-full text-center md:text-left">
+                        <p class="text-lg text-gray-700">
+                            Hello! I'm Magd Ayyad, a passionate Computer Science student at MTI University in Cairo with a strong interest in **AI**, **machine learning**, and **full-stack web development**. I love turning complex problems into simple, elegant solutions.
+                        </p>
+                        <p class="mt-4 text-lg text-gray-700">
+                            I've honed my problem-solving skills by solving over **200 Codeforces** problems and **100 LeetCode** problems, building a solid foundation in data structures and algorithms.
+                            Currently, I'm an **AI & Data Science Intern** at the Digital Egypt Pioneers Initiative (DEPI), where I'm gaining hands-on experience in transforming data into meaningful insights and intelligent systems.
+                        </p>
+                        <p class="mt-4 text-lg text-gray-700">
+                            When I'm not coding, I enjoy exploring new technologies, learning about startups, and improving my personal projects, such as my work on the Fish Market dataset and my Irish Comparison project.
+                        </p>
+                        <div class="mt-8">
+                            <h3 class="text-xl font-semibold mb-4">My Tech Stack</h3>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm font-medium">
+                                <span class="bg-gray-200 text-purple-600 px-3 py-1 rounded-full shadow-inner">JavaScript</span>
+                                <span class="bg-gray-200 text-purple-600 px-3 py-1 rounded-full shadow-inner">Python</span>
+                                <span class="bg-gray-200 text-purple-600 px-3 py-1 rounded-full shadow-inner">C++</span>
+                                <span class="bg-gray-200 text-purple-600 px-3 py-1 rounded-full shadow-inner">Java</span>
+                                <span class="bg-gray-200 text-purple-600 px-3 py-1 rounded-full shadow-inner">scikit-learn</span>
+                                <span class="bg-gray-200 text-purple-600 px-3 py-1 rounded-full shadow-inner">Bootstrap</span>
+                                <span class="bg-gray-200 text-purple-600 px-3 py-1 rounded-full shadow-inner">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Experiments Section -->
+        <section id="ai-experiments" class="py-20 px-4 md:px-6 bg-gray-200">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My AI Experiments</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- AI Project 1 -->
+                    <div class="bg-white rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="text-xl font-bold mb-2">AI Industrial Machines Maintenance</h3>
+                        <p class="text-gray-600 text-sm mb-4">A project focused on predicting maintenance needs for industrial machines using an AI dataset and machine learning models.</p>
+                        <a href="#" class="text-purple-600 hover:text-purple-500 font-semibold">
+                            View on GitHub &rarr;
+                        </a>
+                    </div>
+                    <!-- AI Project 2 -->
+                    <div class="bg-white rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="text-xl font-bold mb-2">Fish Market Dataset Analysis</h3>
+                        <p class="text-gray-600 text-sm mb-4">An in-depth analysis of the Fish Market dataset to identify key features and predict fish weight using ML techniques.</p>
+                        <a href="#" class="text-purple-600 hover:text-purple-500 font-semibold">
+                            View on GitHub &rarr;
+                        </a>
+                    </div>
+                    <!-- AI Project 3 -->
+                    <div class="bg-white rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="text-xl font-bold mb-2">Diabetes Dataset Analysis</h3>
+                        <p class="text-gray-600 text-sm mb-4">A machine learning project to predict the onset of diabetes based on diagnostic measurements from a given dataset.</p>
+                        <a href="#" class="text-purple-600 hover:text-purple-500 font-semibold">
+                            View on GitHub &rarr;
+                        </a>
+                    </div>
+                    <!-- AI Project 4 -->
+                    <div class="bg-white rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="text-xl font-bold mb-2">Irish Comparison Project</h3>
+                        <p class="text-gray-600 text-sm mb-4">A data science project focused on comparing two distinct datasets from Ireland to find meaningful insights.</p>
+                        <a href="#" class="text-purple-600 hover:text-purple-500 font-semibold">
+                            View on GitHub &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 md:px-6 bg-gray-100">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+                <p class="text-gray-600 text-lg mb-8">
+                    I'm currently open to freelance opportunities and full-time roles. Let's build something intelligent and impactful together.
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 transition-colors text-gray-800">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 transition-colors text-gray-800">
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 transition-colors text-gray-800"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-700 transition-colors transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 md:px-6 text-center text-sm text-gray-500 border-t border-gray-300">
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8">
+            <p>&copy; 2025 Magd Ayyad. All Rights Reserved.</p>
+            <p>Email: magdayad6@gmail.com</p>
+            <p>Phone: +20 115 067 4753</p>
+        </div>
+        <div class="flex justify-center space-x-4 mt-4 text-gray-500">
+            <a href="https://www.linkedin.com/in/magd-ayyad" class="hover:text-purple-600 transition-colors">LinkedIn</a>
+            <a href="#" class="hover:text-purple-600 transition-colors">GitHub</a>
+            <a href="#" class="hover:text-purple-600 transition-colors">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu visibility
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
